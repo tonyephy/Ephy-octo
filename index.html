@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Message for Ephy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .heart {
+            color: #FF6347;
+            font-size: 24px;
+            margin: 5px;
+            animation: float 2s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .message {
+            font-size: 18px;
+            color: #333;
+            text-align: left;
+            margin: 20px auto;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .rotate-text {
+            font-size: 24px;
+            color: #FF6347;
+            animation: rotate 3s linear infinite;
+            margin-top: 20px;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="ephy6.jpg" alt="Love Image" style="width: 300px; border-radius: 10px;">
+    <h1 style="color: #FF6347;">To My Dearest Ephy</h1>
+    
+    <p class="message">
+        Hey Sweet Thing,<br><br>
+        Even waiting for you feels special. With each passing second the excitement just keeps building up. As I am awaiting your coming, my mind is set on an expedition of your thoughts. I always find myself looking forward to spending time with you, and the more time I spend with you, I find myself falling more in love with you. Your smiling face is something that I long to see. It can actually change, rather transform my day even if it isn't so special.<br><br>
+        No wonder you have got me so insanely smitten by you. Only a fool could not fall in love with a person as perfect as you.<br><br>
+        Can't wait to see you, I love you!
+    </p>
+
+    <p style="font-size: 18px; color: #FF6347;">Yours, Antony</p>
+
+    <!-- Love icons will be added here -->
+    <div id="loveIcons"></div>
+
+    <!-- Rotating "I love you, Latifa" text -->
+    <div class="rotate-text">I love you, Ephy</div>
+
+    <script>
+        // JavaScript to create love icons
+        const loveIcons = document.getElementById("loveIcons");
+
+        // Create 10 heart icons
+        for (let i = 0; i < 10; i++) {
+            const heart = document.createElement("span");
+            heart.classList.add("heart");
+            heart.innerHTML = "&#10084;";  // Unicode for heart symbol
+            loveIcons.appendChild(heart);
+        }
+    </script>
+</body>
+</html>
